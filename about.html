@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html class="js no-touchevents cssanimations csstransitions" style="">
+	<head>
+		<meta charset="UTF-8">
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>About – Yu-Der Su</title>
+		<!-- Handheld --> 
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS --> 
+		<link rel="stylesheet" href="statics/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<!-- Header --> 
+		<header class="header flex" role="banner">
+			<div class="mycontainer">
+				<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+					<button id="nav-button" class="dl-trigger dl-active">Open Menu</button> 
+					<ul id="nav-menu" class="dl-menu dl-menuopen">
+						<div class="myrow" style="margin: 3px 0px;">
+							<div class="col-12 no-padding">
+								<li><a href="https://vbscript055246.github.io/"><i class="fa fa-home" style="margin-right: 5px;"></i>Home</a></li>
+								<li><a href="#" onclick="expand_section('', true)"><i class="fa fa-plus-square" style="margin-right: 5px;"></i>Show All</a></li>
+								<li><a href="#" id="cv"><i class="fa fa-file-pdf-o" style="margin-right: 5px;"></i>PDF</a></li>
+								<div id="sec-shortcut">
+									<div class="myline colored" style="width: 100%; background-color: grey;"></div>
+									<li><a href="#about">About</a></li>
+									<li><a href="#ski-title" onclick="expand_section('ski', false, false)">Skills</a></li>
+									<li><a href="#pub-title" onclick="expand_section('pub', false, false)">Publications</a></li>
+									<li><a href="#edu-title" onclick="expand_section('edu', false, false)">Education</a></li>
+									<li><a href="#exp-title" onclick="expand_section('exp', false, false)">Experience</a></li>
+								</div>
+							</div>
+						</div>
+					</ul>
+				</nav>
+				<script type="text/javascript"> 
+					document.getElementById('cv').addEventListener("click", function() {
+					//TODO
+					});
+				</script> 
+				<div class="content">
+					<div class="post-title title-spacing ">
+						<h1 id="me" style="font-weight:700">Yu-Der Su</h1>
+					</div>
+					<p style="text-align: center;"> 
+						<a href="mailto:vbcript055246@gmail.com" target="_blank"><i class="fa fa-envelope-square contact-icon"></i>email</a>
+						<a href="https://github.com/vbscript055246" target="_blank"><i class="fa fa-github contact-icon"></i>github</a>
+					</p>
+					<!-- Intro --> 
+					<h2 id="about" class="resume-title">About</h2>
+					<div class="myrow">
+						<div class="col-12" style="text-align:left"> I received my M.S. degrees in <strong>cybersecurity from National Yang Ming Chiao Tung University as part of RTES Lab, advised by <a href="https://scholar.nycu.edu.tw/zh/persons/yu-lun-huang" target="_blink">Prof. Yu-Lun Huang</a>.</strong><br>
+						My academic focus is centered around the convergence of (1)System security (2)Network security on IoT devices. I am deeply passionate about (details). <br><br> During my studies, I obtained <strong>3 certifications</strong> (1)EC-Council CEH Certificate (2)CompTIA Security+ Certificate (3)Advanced Information Security Summer School(AIS3) Certificate of Completion. I received my B.S. degrees in Information Science from National Taiwan Normal University (NTNU) in 2021. 
+						</div>
+					</div>
+					<p style="text-align:right"> <code class="code-highlight">MS / Cybersecurity / NYCU</code> <code>System Security</code> <code>Network Security</code> <code>Embedded Operating System</code> <code>Machine Learning</code> <code>Internet of Things</code> </p>
+					<!-- Skills --> 
+					<h2 id="ski-title" class="resume-title"><a id="ski-sec" href="#ski-title" onclick="expand_section('ski')">Skills <i id="ski-icon" class="fa fa-plus-square"></i></a></h2>
+					<div id="ski" style="display: none">
+						<div class="myrow no-margin">
+							<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"> <strong>Research</strong> </div>
+							<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10"> <code class="code-margin">System Security</code> <code class="code-margin">Network Security</code> <code class="code-margin">Deep Learning</code> <code class="code-margin">Federated Learning</code> <code class="code-margin">Embedded Operating System</code> </div>
+						</div>
+						<div class="myrow no-margin">
+							<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"> <strong>System</strong> </div>
+							<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10"> <code class="code-margin">Linux System Call</code> <code class="code-margin">Kernel Driver Development</code> <code class="code-margin">Cross-Compilation</code> </div>
+						</div>
+						<div class="myrow no-margin">
+							<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"> <strong>Software</strong> </div>
+							<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10"> <code class="code-margin">Wireshark</code> <code class="code-margin">IDA pro</code> <code class="code-margin">x64dbg</code> <code class="code-margin">Burp Suite</code> <code class="code-margin">iptables</code> <code class="code-margin">Git</code> <code class="code-margin">Docker</code> <code class="code-margin">SageMath</code> <code class="code-margin">quantumlib/Cirq</code> </div>
+						</div>
+						<div class="myrow no-margin">
+							<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"> <strong>Languages</strong> </div>
+							<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10"> <code class="code-margin">C/C++</code> <code class="code-margin">Python</code>  <code class="code-margin">x86 Asm</code> <code class="code-margin">Shell Script</code> <code class="code-margin">PHP</code> <code class="code-margin">Javascript</code> <code class="code-margin">SQL</code> <code class="code-margin">Matlab</code> <code class="code-margin">Java</code> <code class="code-margin">VHDL</code> </div>
+						</div>
+						<div class="myrow no-margin" style="margin-bottom: 40px">
+							<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"> <strong>Platforms</strong> </div>
+							<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10"> <code class="code-margin">Linux</code> <code class="code-margin">Raspberry Pi</code> <code class="code-margin">PXA270</code> <code class="code-margin">ZC702</code> <code class="code-margin">ESP32</code> <code class="code-margin">Arduino</code> <code class="code-margin">Android</code> </div>
+						</div>
+					</div>
+					<!-- Publications --> 
+					<h2 id="pub-title" class="resume-title"><a id="pub-sec" href="#pub-title" onclick="expand_section('pub')">Publications <i id="pub-icon" class="fa fa-plus-square"></i></a>
+					</h2>
+					<div id="pub" style="display:none">
+						<div id="hover-row-1" class="myrow">
+						  <!-- Topic --> 
+						  <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 text-xs-left text-sm-left text-md-center text-lg-center">[1]</div>
+						  <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11"> <strong>FedFox: Revolutionizing Kitsune through Federated Learning</strong></div>
+						  <!-- Authors --> 
+						  <div class="col-md-1 col-lg-1"></div>
+						  <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11"><strong>Yu-Der Su</strong></div>
+						  <!-- Conference / Journal --> 
+						  <div class="col-md-1 col-lg-1"></div>
+						  <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11">National Yang Ming Chiao Tung University Master's Thesis, 2023</div>
+						  <!-- Tags --> 
+						  <div class="col-md-1 col-lg-1"></div>
+						  <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11"> <code class="code-margin code-highlight">NYCU </code> <code class="code-margin">intrusion detection</code> <code class="code-margin">feature extraction</code> <code class="code-margin">internet of things</code> <code class="code-margin">federated learning</code> </div>
+					    </div>
+						
+						<h2 id="additional-exp-title" class="resume-title"><a id="award-sec" href="#additional-exp-title">Additional</a></h2>
+						<div id="hover-row-2" class="myrow">
+                              <!-- Topic --> 
+                              <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 text-xs-left text-sm-left text-md-center text-lg-center">[2]</div>
+                              <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11"><strong>Development and Validation of Interactive Creativity Task Platform</strong><a style="text-decoration:none;margin-left:3px" target="_blank" href="https://doi.org/10.3389/fpsyg.2022.954946"> <i class="fa fa-external-link-square"></i></a></div>
+                              <!-- Authors --> 
+                              <div class="col-md-1 col-lg-1"></div>
+                              <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11">Ching-Lin Wu, <strong>Yu-Der Su</strong>, Eason Chen, Pei-Zhen Chen, Yu-Lin Chang, Hsueh-Chih Chen</div>
+                              <!-- Conference / Journal --> 
+                              <div class="col-md-1 col-lg-1"></div>
+                              <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11"></div>
+                              <!-- Tags --> 
+                              <div class="col-md-1 col-lg-1"></div>
+                              <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11"> <code class="code-margin code-highlight" style="background-color: #333333">(others)</code> <code class="code-margin">Full-Stack development</code> <code class="code-margin">Node.js</code> <code class="code-margin">Python</code> <code class="code-margin">Web application</code> <code class="code-margin">computer scoring</code> </div>
+                           </div>
+					</div>
+					<!-- Education --> 
+					<h2 id="edu-title" class="resume-title">
+					<a id="edu-sec" href="#edu-title" onclick="expand_section('edu')">Education <i id="edu-icon" class="fa fa-plus-square"></i></a> <a id="edu-detail" href="#" onclick="show_detail(this.id, ['edu-1', 'edu-2', 'edu-4'])" style="display: none"><i id="edu-detail-1" class="fa fa-toggle-off"></i></a> 
+					</h2>
+					<div id="edu" style="display: none">
+						<div id="row-edu-1" class="myrow hover">
+							<!-- Time Range / Institution / Location --> 
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">Sep. 2021 - Jun 2023</div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" onclick="expand('edu-1')" style="cursor:pointer"><strong>National Yang Ming Chiao Tung University (NYCU)</strong></div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 text-xs-left text-sm-right text-md-right text-lg-right">
+							<i class="fa fa-map-marker add-margin"></i>Hsinchu, Taiwan
+							</div>
+							<!-- Title --> 
+							<div class="col-lg-2"></div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">M.S student in Cybersecurity <code>GPA: 3.5 / 4.0</code></div>
+							<!-- Detail --> 
+							<div id="edu-1" style="display:none">
+							<div class="col-lg-2"></div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+							<div class="myline"></div>
+							</div>
+							<div class="col-lg-2"></div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10" style="font-size:15.5px">
+							<li>Advisors: <a href="https://scholar.nycu.edu.tw/zh/persons/yu-lun-huang" target="_blank">Yu-Lun Huang</a></li>
+							<li>Thesis: FedFox: Revolutionizing Kitsune through Federated Learning</a></li>
+							<li>
+							Coursework: Network Security, Secure Programming, Theory of cryptology, Network programming, Embedded Operating System, Oprating System, Computer architecture
+							</li>
+							</div>
+							</div>
+						</div>
+						<div id="row-edu-2" class="myrow hover">
+							<!-- Time Range / Institution / Location --> 
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">Sep. 2018 - Jun. 2021</div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" onclick="expand('edu-2')" style="cursor:pointer"><strong>National Taiwan Normal University</strong></div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 text-xs-left text-sm-right text-md-right text-lg-right">
+							<i class="fa fa-map-marker add-margin"></i>Taipei, Taiwan
+							</div>
+							<!-- Title --> 
+							<div class="col-lg-2"></div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">B.S. in Information Science <code>GPA: 3.8 / 4.0</code></div>
+							<!-- Detail --> 
+							<div id="edu-2" style="display:none">
+							<div class="col-lg-2"></div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+							<div class="myline"></div>
+							</div>
+							<div class="col-lg-2"></div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10" style="font-size:15.5px">
+							<li>
+							Coursework: Information Security, Computer Network, Computer Architecture,  Artificial Intelligence, Computer Algorithm, Data Structure, Linear Algebra, Theory of Probability, Object-Oriented Analysis and Design										   
+							</li>
+							<li>Project: <a href="https://doi.org/10.3389/fpsyg.2022.954946" target="_blank">Development and Validation of Interactive Creativity Task Platform</a> (National Science and Technology Council MOST 108-2410-H-003-080)</li>
+							</div>
+							</div>
+						</div>
+						<!-- Honors . Awards --> 
+						<h2 id="award-title" class="resume-title"><a id="award-sec" href="#award-title">Honors . Awards</a></h2>
+						<div id="row-award-1" class="myrow">
+							<!-- Date / Title / Institute --> 
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">Jun. 2018</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+							<strong>Presidential Awards</strong>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-xs-left text-sm-left text-md-left text-lg-right">
+							<i class="fa fa-thumb-tack add-margin"></i>National Taiwan Normal University
+							</div>
+						</div>
+					</div>
+					<!-- Experience > --> 
+					<h2 id="exp-title" class="resume-title">
+					<a id="exp-sec" href="#exp-title" onclick="expand_section('exp')">Experience <i id="exp-icon" class="fa fa-plus-square"></i></a> <a id="exp-detail" href="#" onclick="show_detail(this.id, ['hide-1', 'hide-2', 'hide-3', 'hide-4', 'hide-5', 'hide-6', 'hide-7'])" style="display: none"><i id="exp-detail-1" class="fa fa-toggle-off"></i></a> 
+					</h2>
+					<div id="exp" style="display:none">
+						<!-- Read Mode Control <strong> <code> Mode: <a id="all" onclick="highlight(this.id)">All</a> <a class="txt-ignore" id="rs" onclick="highlight(this.id)">Research</a> <a class="txt-ignore" id="se" onclick="highlight(this.id)">Industry</a> </code> </strong>-->
+						<!-- Sincia --> 
+						<div id="row-exp-rs1" class="myrow hover">
+							<!-- Time Range / Title / Location --> 
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">Jun. 2022 - Sep. 2022</div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" onclick="expand('hide-1')" style="cursor:pointer"><strong>Academia Sinica</strong></div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 text-xs-left text-sm-right text-md-right text-lg-right">
+							<i class="fa fa-map-marker add-margin"></i>Taipei, Taiwan
+							</div>
+							<!-- Institution --> 
+							<div class="col-lg-2"></div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">Research Assistant</div>
+							<!-- Tags --> 
+							<div class="col-lg-2"></div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10"> <i class="fa fa-hashtag hash-tag-spacing"></i> <code id="tag-rs1-1">Virtual Private Network</code> <code id="tag-rs1-1">Raspberry Pi</code> </div>
+						</div>
+						<!-- NYCU --> 
+						<div id="row-exp-rs2" class="myrow hover">
+							<!-- Time Range / Title / Location --> 
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">Sep. 2022 - Jun. 2023</div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" onclick="expand('hide-1')" style="cursor:pointer"><strong>National Yang Ming Chiao Tung University - ICST</strong></div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 text-xs-left text-sm-right text-md-right text-lg-right">
+							<i class="fa fa-map-marker add-margin"></i>Hsinchu, Taiwan
+							</div>
+							<!-- Institution --> 
+							<div class="col-lg-2"></div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">IT Support</div>
+							<!-- Tags --> 
+							<div class="col-lg-2"></div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10"> <i class="fa fa-hashtag hash-tag-spacing"></i> <code id="tag-rs1-1">Network management</code> </div>
+						</div>
+						<div id="row-exp-rs3" class="myrow hover">
+							<!-- Time Range / Title / Location --> 
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">Jun. 2022 - Sep. 2022</div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" onclick="expand('hide-1')" style="cursor:pointer"><strong>TANet hcrc Network Regional Center</strong></div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 text-xs-left text-sm-right text-md-right text-lg-right">
+							<i class="fa fa-map-marker add-margin"></i>Hsinchu, Taiwan
+							</div>
+							<!-- Institution --> 
+							<div class="col-lg-2"></div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">Pentest Technician</div>
+							<!-- Tags --> 
+							<div class="col-lg-2"></div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10"> <i class="fa fa-hashtag hash-tag-spacing"></i> <code id="tag-rs1-1">Web Application Penetration Test</code> <code id="tag-rs1-1">Software Reverse Engineering</code> </div>
+						</div>
+						<!-- Teaching --> 
+						<h2 id="teach-title" class="resume-title"><a id="teach-sec" href="#teach-title">Teach</a></h2>
+						<div id="row-exp-te1" class="myrow hover">
+						<!-- Time Range / Title / Location --> 
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">Feb. 2022 - Jun. 2022</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" onclick="expand('hide-1')" style="cursor:pointer"><strong>Teaching Assistant</strong></div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 text-xs-left text-sm-right text-md-right text-lg-right">
+							<i class="fa fa-map-marker add-margin"></i>Hsinchu, Taiwan
+						</div>
+						<!-- Institution --> 
+						<div class="col-lg-2"></div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">National Yang Ming Chiao Tung University - EEDP20009 Solid-State Sensor and Embedded System</div>
+						<!-- Tags --> 
+						<div class="col-lg-2"></div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10"> <i class="fa fa-hashtag hash-tag-spacing"></i> <code id="tag-te1-1">Raspberry Pi</code> <code id="tag-te1-2">GPIO</code> <code id="tag-te1-3">Python</code> <code id="tag-te1-3">Chatbot</code> </div>
+						<!-- Details --> 
+						<div id="hide-1" style="display:none">
+						<div class="col-lg-2"></div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+							<div class="myline"></div>
+						</div>
+						<div class="col-lg-2"></div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10" style="font-size:15.5px">
+							<strong>IoT devices/Sensors &amp; GPIO programming in python</strong> 
+							<li>Demonstrated raspberry pi GPIO and programming sensors </li>
+							<li>
+							Designed chatbot application with webhook to teach students to create their own IoT application
+							</li>
+						</div>
+						</div>
+						</div>
+						
+						<div id="row-exp-te2" class="myrow hover">
+						<!-- Time Range / Title / Location --> 
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">Sep. 2022 - Jan. 2023<br>Sep. 2021 - Jan. 2022</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" onclick="expand('hide-2')" style="cursor:pointer"><strong>Teaching Assistant</strong></div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 text-xs-left text-sm-right text-md-right text-lg-right">
+							<i class="fa fa-map-marker add-margin"></i>Hsinchu, Taiwan
+						</div>
+						<!-- Institution --> 
+						<div class="col-lg-2"></div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">National Yang Ming Chiao Tung University - EEEC10012 Introduction to Computers and Programming</div>
+						<!-- Tags --> 
+						<div class="col-lg-2"></div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10"> <i class="fa fa-hashtag hash-tag-spacing"></i> <code id="tag-te1-1">C/C++</code> <code id="tag-te1-2">algorithm</code> <code id="tag-te1-3">data structure</code> </div>
+						<!-- Details --> 
+						<div id="hide-2" style="display:none">
+						<div class="col-lg-2"></div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+							<div class="myline"></div>
+						</div>
+						<div class="col-lg-2"></div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10" style="font-size:15.5px">
+							<strong> Fundamental C/C++ languages and usage &amp;Standard template library applications </strong> 
+							<li>Explaining arrays and pointer in practice</li>
+							<li>Demonstrated how to use file stream and I/O stream in C++</li>
+						</div>
+						</div>
+						</div>
+						
+						<div id="row-exp-te3" class="myrow hover">
+						<!-- Time Range / Title / Location --> 
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">Jun. 2019 - Jan. 2020</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" onclick="expand('hide-3')" style="cursor:pointer"><strong>Teaching Assistant</strong></div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 text-xs-left text-sm-right text-md-right text-lg-right">
+							<i class="fa fa-map-marker add-margin"></i>Taipei, Taiwan
+						</div>
+						<!-- Institution --> 
+						<div class="col-lg-2"></div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">National Taiwan Normal University - LSU0003 Data Structures</div>
+						<!-- Tags --> 
+						<div class="col-lg-2"></div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10"> <i class="fa fa-hashtag hash-tag-spacing"></i> <code id="tag-te1-1">Python</code> <code id="tag-te1-3">data structure</code> </div>
+						<!-- Details --> 
+						<div id="hide-3" style="display:none">
+						<div class="col-lg-2"></div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+							<div class="myline"></div>
+						</div>
+						<div class="col-lg-2"></div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10" style="font-size:15.5px">
+						</div>
+						</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</header>
+		<script src="statics/my.js"></script>  
+	</body>
+</html>
